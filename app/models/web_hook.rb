@@ -2,7 +2,7 @@ class WebHook < ActiveRecord::Base
   include HTTParty
 
   # HTTParty timeout
-  default_timeout 10
+  default_timeout 60
 
   validates :url,
             presence: true,
