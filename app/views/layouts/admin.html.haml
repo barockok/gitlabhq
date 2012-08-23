@@ -18,5 +18,7 @@
           = link_to "Hooks", admin_hooks_path
         %li{class: tab_class(:admin_resque)}
           = link_to "Resque", admin_resque_path
+        %li{class: tab_class(:admin_rock_server)}
+          = link_to "Rock Server", admin_resque_path
 
       .content= yield
