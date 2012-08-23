@@ -59,6 +59,7 @@ Gitlab::Application.routes.draw do
     end
     resource :logs
     resource :resque, :controller => 'resque'
+    resource :rock_server, :controller => 'rock_server'
     root :to => "dashboard#index"
   end
 
